@@ -1,23 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5c0d477-1ec2-400e-a3f4-fe5eae3b4596" name="Changes" comment="" />
+    <list default="true" id="dd9dfe33-8b1b-41ee-a30c-5ec615c24240" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
-  <component name="ProjectId" id="2TpSJqyANDWMOr50pcoZIZIVyGu" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2TpRVNG5z4jAfyiqEzi3FNlw9Ls" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="pythonProject1" />
+      <module name="RobotTest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -41,11 +50,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c5c0d477-1ec2-400e-a3f4-fe5eae3b4596" name="Changes" comment="" />
-      <created>1691738459429</created>
+      <changelist id="dd9dfe33-8b1b-41ee-a30c-5ec615c24240" name="Changes" comment="" />
+      <created>1691738059796</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1691738459429</updated>
+      <updated>1691738059796</updated>
     </task>
     <servers />
   </component>
