@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.9.16 on darwin)" generated="20230811 15:13:51.656" rpa="false" schemaversion="4">
+<suite id="s1" name="Temp" source="/Users/meeraramesh/PycharmProjects/pythonProject2/temp.robot">
+<test id="s1-t1" name="Open application and search for iPhone" line="43">
+<kw name="Open amazon app">
+<doc>opens amazon app</doc>
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${DEVICE_PLATFORM}</arg>
+<arg>platformVersion=${DEVICE_PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${PACKAGE_NAME}</arg>
+<arg>appActivity=${ACTIVITY_NAME}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20230811 15:13:51.979" endtime="20230811 15:14:00.275"/>
+</kw>
+<status status="PASS" starttime="20230811 15:13:51.979" endtime="20230811 15:14:00.275"/>
+</kw>
+<kw name="Skip log in">
+<doc>clicks skip login button and proceeds</doc>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230811 15:14:10.276" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230811 15:14:00.276" endtime="20230811 15:14:10.276"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${BUTTON_SKIP_LOGIN}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20230811 15:14:10.327" level="INFO">criteria is skip_sign_in_button</msg>
+<status status="PASS" starttime="20230811 15:14:10.276" endtime="20230811 15:14:10.327"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${BUTTON_SKIP_LOGIN}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230811 15:14:10.329" level="INFO">Clicking element 'skip_sign_in_button'.</msg>
+<msg timestamp="20230811 15:14:10.401" level="INFO">criteria is skip_sign_in_button</msg>
+<status status="PASS" starttime="20230811 15:14:10.328" endtime="20230811 15:14:10.401"/>
+</kw>
+<status status="PASS" starttime="20230811 15:14:00.275" endtime="20230811 15:14:10.401"/>
+</kw>
+<kw name="Click search box">
+<doc>clicks search box</doc>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${SEARCH_BAR}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20230811 15:14:13.860" level="INFO">criteria is chrome_search_hint_view
+criteria is chrome_search_hint_view</msg>
+<status status="PASS" starttime="20230811 15:14:10.402" endtime="20230811 15:14:13.860"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${SEARCH_BAR}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230811 15:14:13.862" level="INFO">Clicking element 'chrome_search_hint_view'.</msg>
+<msg timestamp="20230811 15:14:14.588" level="INFO">criteria is chrome_search_hint_view</msg>
+<status status="PASS" starttime="20230811 15:14:13.860" endtime="20230811 15:14:14.588"/>
+</kw>
+<status status="PASS" starttime="20230811 15:14:10.402" endtime="20230811 15:14:14.588"/>
+</kw>
+<kw name="Enter search text">
+<arg>${SEARCH_TEXT}</arg>
+<doc>enter the search text</doc>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${INPUT_SEARCH_BAR}</arg>
+<arg>${search_text}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230811 15:14:14.590" level="INFO">Typing text 'iPhone 12' into text field 'rs_search_src_text'</msg>
+<msg timestamp="20230811 15:14:17.106" level="INFO">criteria is rs_search_src_text</msg>
+<status status="PASS" starttime="20230811 15:14:14.589" endtime="20230811 15:14:17.106"/>
+</kw>
+<status status="PASS" starttime="20230811 15:14:14.588" endtime="20230811 15:14:17.106"/>
+</kw>
+<doc>opens the app and searches for the given input text</doc>
+<status status="PASS" starttime="20230811 15:13:51.978" endtime="20230811 15:14:17.106"/>
+</test>
+<status status="PASS" starttime="20230811 15:13:51.659" endtime="20230811 15:14:17.107"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Temp">Temp</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
